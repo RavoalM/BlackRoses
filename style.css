@@ -1,0 +1,121 @@
+.blackrose {
+    position: relative;
+    background-image: url('img/fundo.png');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.body{
+    background-color: rgb(25, 11, 39);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    z-index: 2;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-out forwards;
+}
+.camada {
+    text-align: center;
+    z-index: 2;
+    color: white;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto;
+}
+.banner{
+    width: 80%; 
+    max-width: 600px; 
+    z-index: 2;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    animation: fadeIn 2s ease-out forwards;
+}
+.logo {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+a {
+    color: #b683af;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.blackrose::before {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%); /* Gradiente que começa escuro no centro e vai clareando nas bordas */
+    z-index: 1;
+    pointer-events: none;
+}
+
+a:hover {
+    color: #ffcc00; 
+    border-color: #ffcc00; 
+}
+
+.blackrose:hover {
+    background-image: url('img/fundo.png');
+    background-position: top;
+    background-size: cover;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
