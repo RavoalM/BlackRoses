@@ -102,11 +102,11 @@ a:hover {
     border-color: #ffcc00; 
 }
 
-.blackrose:hover {
+/*.blackrose:hover {
     background-image: url('img/fundo.png');
     background-position: top;
     background-size: cover;
-}
+}*/
 
 
 @keyframes fadeIn {
